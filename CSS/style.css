@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fundo: #1082a5;
+    --fundo-cabecalho-tabela: #15aedd;
+    --fundo-botao-limpar: #838d91;
+    --hover-botao-limpar: #686f72;
+    --titulo: #004053;
+    --texto: #fff;
+    --texto-destacado: #00c3ff;
+    --texto-placeholder: #8e979b;
+    --tabela-botoes: #004053;
+    --texto-alerta: #9c0606;
+    --texto-corrigir: #dada00;
+    --texto-ok: #02b402;
+}
+
+body {
+    background-image: url("../Assets/fundo.png");
+    font-family: 'Mulish', sans-serif;
+}
+
+.conteudo-site {
+    background-color: var(--fundo);
+    height: 100%;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.conteudo-site header {
+    background-color: var(--fundo-cabecalho-tabela);
+    height: 100px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+}
+
+.conteudo-inicial h1 {
+    color: var(--titulo);
+    font-size: 2em;
+    font-weight: 800;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.conteudo-inicial h2 {
+    color: var(--titulo);
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 2.5;
+    margin: 0 150px;
+    text-align: center;
+}
+
+.conteudo-inicial p {
+    color: var(--texto);
+    font-size: 1.1em;
+    text-align: justify;
+    margin: 0 150px;
+}
+
+.conteudo-inicial, 
+ p:nth-last-child(1) {
+    text-align: center;
+}
+
+.classificacao-imc {
+    margin: 20px auto;
+    width: 500px;
+}
+
+.classificacao-imc thead {
+    background-color: var(--tabela-botoes);
+    color: var(--texto);
+    font-size: 1.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.classificacao-imc tbody {
+    background-color: var(--fundo-cabecalho-tabela);
+    color: var(--texto);
+    font-weight: 600;
+    text-align: center;
+}
+
+a {
+    color: var(--titulo);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--texto-destacado);
+    text-decoration: underline;
+}
+
+/* Início CSS Calculadora */
+
+/* Formulário dos dados */
+
+.container {
+    background-color: var(--tabela-botoes);
+    border: none;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-height: 420px;
+    max-width: 400px;
+    padding: 1em 1.5em;
+}
+
+#primeiro-passo {    
+    color: var(--texto);
+    text-align: center;
+}
+
+#primeiro-passo h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;    
+}
+
+.formulario-imc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dados-formulario {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.dados-formulario label {
+    color: var(--texto);
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.dados-formulario input {
+    border: 2px solid var(--fundo-cabecalho-tabela);
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 0.5em 0.3em;
+    outline: none;
+    resize: none;
+}
+
+.dados-formulario input::placeholder {
+    color: var(--texto-placeholder);
+}
+
+.dados-formulario input:focus {
+    background-color: var(--fundo);
+    border: 3px solid var(--texto);
+    color: var(--texto);
+    outline: none;
+    resize: none;
+}
+
+.dados-formulario input:focus::placeholder {
+    color: var(--texto);
+}
+
+/* Estilização dos botões */
+
+.botoes-calculadora {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    gap: 1em;
+}
+
+.botoes-calculadora button {
+    background-color: var(--fundo-cabecalho-tabela);
+    border: none;
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px var(--texto);
+    color: var(--texto);
+    cursor: pointer;
+    flex: 1;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+}
+
+#botao-calcula:hover {
+    background-color: var(--fundo);
+}
+
+
+#botao-limpa {
+    background-color: var(--fundo-botao-limpar);
+}
+
+#botao-limpa:hover {
+    background-color: var(--hover-botao-limpar);
+}
+
+.voltar {
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+#botao-volta {
+    background-color: var(--fundo-cabecalho-tabela);
+    border: none;
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px var(--texto);
+    color: var(--texto);
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* Estilização das mensagens de resultado */
+.depois {
+    visibility: hidden;
+    padding: 1em 1.5em;
+}
+
+#erro-nome,
+#erro-altura,
+#erro-peso {
+    background-color: var(--fundo-cabecalho-tabela);
+    border-radius: 5px;
+    color: var(--texto-alerta);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2px auto;
+    padding: 0 15px;
+    width: max-content;
+    animation: chacoalha .3s ease infinite;
+}
+
+#mensagem {
+    color: var(--texto);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#segundo-passo {
+    bottom: 315px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Fim CSS Calculadora */
+
+/* Rodapé */
+
+.rodape p {
+    color: var(--texto);
+    font-size: 1em;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+:-webkit-scrollbar-track {
+    background: var(--fundo); 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--fundo-cabecalho-tabela); 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--fundo); 
+  }
+
+@keyframes chacoalha {
+	25% {
+		transform: translateX(4px);
+	}
+	50% {
+		transform: translateX(-4px);
+	}
+	75% {
+		transform: translateX(4px);
+	}
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        width: auto;
+    }
+
+    .conteudo-site {
+        max-width: 85%;
+    }
+
+    .conteudo-site header {
+        height: 60px;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    .conteudo-inicial h1 {
+        font-size: 1.2em;
+        margin: 15px 20px 0;
+    }
+
+    .conteudo-inicial h2 {
+        font-size: 1em;
+        line-height: 1;
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    .conteudo-inicial p {
+        font-size: 0.8em;
+        margin: 0 20px;
+    }
+
+    .classificacao-imc {
+        margin: 10px auto;
+        width: 235px;
+    }
+
+    .classificacao-imc thead {
+        font-size: 0.7em;
+    }
+
+    .classificacao-imc tbody {
+        font-size: 0.6em;
+    }
+
+    /* Início CSS Calculadora */
+
+    /* Formulário dos dados */
+
+    .container {
+        max-height: 290px;
+        max-width: 235px;
+    }
+
+    #primeiro-passo h2 {
+        font-size: 1.2em;
+    }
+
+    .dados-formulario label {
+        font-size: 0.8em;
+    }
+
+    .dados-formulario input {
+        font-size: 0.7em;
+    }
+
+    /* Estilização dos botões */
+
+    .botoes-calculadora {
+        justify-content: space-around;
+        gap: 0.5em;
+    }
+
+    .botoes-calculadora button {
+        font-size: 0.8em;
+    }
+
+    .voltar {
+        margin: 25px auto 0;
+        text-align: center;
+    }
+
+    #botao-volta {
+        font-size: 0.8em;
+    }
+
+    /* Estilização das mensagens de resultado */
+    .depois {
+        visibility: hidden;
+        padding: 1em 1.5em;
+    }
+
+    #erro-nome,
+    #erro-altura,
+    #erro-peso {
+        font-size: 0.7em;
+        padding: 0 10px;
+    }
+
+    #mensagem {
+        font-size: 1em;
+    }
+
+    #segundo-passo {
+        bottom: 250px;
+    }
+
+    /* Fim CSS Calculadora */
+
+    /* Rodapé */
+
+    .rodape p {
+        font-size: 0.6em;
+        margin: 0 15px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    :-webkit-scrollbar-track {
+        background: var(--fundo); 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--fundo-cabecalho-tabela); 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--fundo); 
+    }
+
+}
