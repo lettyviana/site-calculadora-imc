@@ -298,6 +298,143 @@ a:hover {
 	}
 }
 
+/* Início tablet  */
+@media screen and (min-width: 376px) and (max-width: 1200px) {
+    body {
+        width: auto;
+    }
+
+    .conteudo-site {
+        max-width: 85%;
+    }
+
+    .conteudo-site header {
+        height: 80px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    .conteudo-inicial h1 {
+        font-size: 2em;
+        margin: 15px 20px 0;
+    }
+
+    .conteudo-inicial h2 {
+        font-size: 1.2em;
+        line-height: 1;
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    .conteudo-inicial p {
+        font-size: 1em;
+        margin: 0 20px;
+    }
+
+    .classificacao-imc {
+        margin: 10px auto;
+        width: 450px;
+    }
+
+    .classificacao-imc thead {
+        font-size: 1.3em;
+    }
+
+    .classificacao-imc tbody {
+        font-size: 1.1em;
+    }
+
+    /* Início CSS Calculadora */
+
+    /* Formulário dos dados */
+
+    .container {
+        max-height: 330px;
+        max-width: 350px;
+    }
+
+    #primeiro-passo h2 {
+        font-size: 1.2em;
+    }
+
+    .dados-formulario label {
+        font-size: 1em;
+    }
+
+    .dados-formulario input {
+        font-size: 0.9em;
+    }
+
+    /* Estilização dos botões */
+
+    .botoes-calculadora {
+        justify-content: space-around;
+        gap: 0.5em;
+    }
+
+    .botoes-calculadora button {
+        font-size: 0.8em;
+    }
+
+    .voltar {
+        margin: 25px auto 0;
+        text-align: center;
+    }
+
+    #botao-volta {
+        font-size: 0.8em;
+    }
+
+    /* Estilização das mensagens de resultado */
+    .depois {
+        visibility: hidden;
+        padding: 1em 1.5em;
+    }
+
+    #erro-nome,
+    #erro-altura,
+    #erro-peso {
+        font-size: 0.8em;
+        padding: 0 10px;
+    }
+
+    #mensagem {
+        font-size: 1.2em;
+    }
+
+    #segundo-passo {
+        bottom: 250px;
+    }
+
+    /* Fim CSS Calculadora */
+
+    /* Rodapé */
+
+    .rodape p {
+        font-size: 0.9em;
+        margin: 0 15px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    :-webkit-scrollbar-track {
+        background: var(--fundo); 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--fundo-cabecalho-tabela); 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--fundo); 
+    }
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 375px) {
     body {
         width: auto;
