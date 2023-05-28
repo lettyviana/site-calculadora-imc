@@ -44,6 +44,9 @@ Neste site simples, apresento informações sobre o índice de massa corporal, a
     <img src="./Assets/01-Tela-inicial-desktop.png" alt="Tela inicial desktop" width="700px"/><br />
     <img src="./Assets/02-Tela-erro-calculadora-desktop.png" alt="Tela de erros na calculadora desktop" width="700px" /><br />
     <img src="./Assets/03-Tela-calculadora-ok-desktop.png" alt="Tela da calculadora retornando a mensagem com o IMC desktop" width="700px" /><br />
+    <img src="./Assets/01-Tela-inicial-tablet.png" alt="Tela inicial tabçet" width="270px" />
+    <img src="./Assets/02-Tela-erro-calculadora-tablet.png" alt="Tela de erros na calculadora tablet 2" width="270px" />
+    <img src="./Assets/03-Tela-calculadora-ok-tablet.png" alt="Tela da calculadora retornando a mensagem com o IMC tablet" width="270px" />
     <img src="./Assets/01-Tela-inicial-mobile.png" alt="Tela inicial mobile 1" width="270px" />
     <img src="./Assets/02-Tela-erro-calculadora-mobile.png" alt="Tela de erros na calculadora mobile 2" width="270px" />
     <img src="./Assets/03-Tela-calculadora-ok-mobile.png" alt="Tela da calculadora retornando a mensagem com o IMC mobile" width="270px" />
