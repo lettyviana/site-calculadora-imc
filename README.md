@@ -21,7 +21,7 @@ Neste site simples, apresento informações sobre o índice de massa corporal, a
 
 ### **1. Minhas implementações**
 
-- Design responsivo para desktop (1920 x 1080p) e celular (320 a 375 x 658p a 933p);
+- Design responsivo para desktop (1920p x 1080p), tablet (768p x 1174p) e celular (320p a 375p x 658p a 933p);
 - Validação de dados inseridos para que a calculadora retorne uma mensagem caso nenhum dos campos obrigatórios sejam preenchidos ou preenchidos incorretamente;
 - Mensagens personalizadas de acordo com o resultado;
 - Botões para calcular, limpar os dados inseridos e voltar à página inicial da calculadora;
@@ -70,5 +70,5 @@ Para usar, acesse o link abaixo.
 
 ### **6. Status do projeto**
 - [x] Funcional
-- [x] Responsivo para desktop (1920 x 1080p) e celular (320 a 375 x 658p a 933p);
+- [x] Responsivo para desktop (1920p x 1080p), tablet (768p x 1174p) e celular (320p a 375p x 658p a 933p);
 - [x] Concluído, porém sujeito a modificações.
